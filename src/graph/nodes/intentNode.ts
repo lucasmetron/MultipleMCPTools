@@ -1,11 +1,11 @@
 import { AIMessage } from "langchain";
-import { OpenRouterService } from "../../services/openRouterService";
-import type { GraphState } from "../state";
+import { OpenRouterService } from "../../services/openRouterService.ts";
+import type { GraphState } from "../state.ts";
 import {
   getSystemPrompt,
   type IntentData,
   IntentSchema,
-} from "../../prompts/v1/identifyIntent";
+} from "../../prompts/v1/identifyIntent.ts";
 
 export function intentNode(openRouterService: OpenRouterService) {
   return async (state: GraphState): Promise<Partial<GraphState>> => {

@@ -1,8 +1,8 @@
 import { StateGraph, START, END } from "@langchain/langgraph";
-import { intentNode } from "./nodes/intentNode";
-import { agentNode } from "./nodes/agentNode";
-import { OpenRouterService } from "../services/openRouterService";
-import { GraphAnnotation, type GraphState } from "./state";
+import { intentNode } from "./nodes/intentNode.ts";
+import { agentNode } from "./nodes/agentNode.ts";
+import { OpenRouterService } from "../services/openRouterService.ts";
+import { GraphAnnotation, type GraphState } from "./state.ts";
 
 export function buildGraphPipeline(openRouterService: OpenRouterService): any {
   return new StateGraph(GraphAnnotation)

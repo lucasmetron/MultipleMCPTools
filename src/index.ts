@@ -1,5 +1,5 @@
 import { readFileSync } from "fs";
-import { createServer } from "./server";
+import { createServer } from "./server.ts";
 
 const app = await createServer();
 

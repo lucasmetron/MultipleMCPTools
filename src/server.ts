@@ -1,5 +1,5 @@
 import { HumanMessage } from "@langchain/core/messages";
-import { buildGraph } from "./graph/factory";
+import { buildGraph } from "./graph/factory.ts";
 
 import Fastify from "fastify";
 

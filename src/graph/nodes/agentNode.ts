@@ -1,7 +1,7 @@
 import { AIMessage } from "langchain";
-import { OpenRouterService } from "../../services/openRouterService";
-import type { GraphState } from "../state";
-import { getSystemPrompt, getUserPrompt } from "../../prompts/v1/agentNode";
+import { OpenRouterService } from "../../services/openRouterService.ts";
+import type { GraphState } from "../state.ts";
+import { getSystemPrompt, getUserPrompt } from "../../prompts/v1/agentNode.ts";
 
 export function agentNode(openRouterService: OpenRouterService) {
   return async (state: GraphState): Promise<Partial<GraphState>> => {

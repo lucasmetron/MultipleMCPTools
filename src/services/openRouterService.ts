@@ -1,5 +1,5 @@
 import { ChatOpenAI } from "@langchain/openai";
-import { config, type ModelConfig } from "../config";
+import { config, type ModelConfig } from "../config.ts";
 import {
   SystemMessage,
   HumanMessage,
@@ -7,7 +7,7 @@ import {
   AIMessage,
 } from "@langchain/core/messages";
 import { createAgent, providerStrategy } from "langchain";
-import { getMCPTools } from "./mcpService";
+import { getMCPTools } from "./mcpService.ts";
 import { z } from "zod/v3";
 import { type ChatGeneration } from "@langchain/core/outputs";
 
