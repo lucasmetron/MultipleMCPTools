@@ -1,7 +1,7 @@
 {
-  "node_version": "20",
+  "node_version": "22",
   "graphs": {
-    "multiple_mcp_tools": "./src/graph/factory.ts:graph"
+    "multiple_mcp_tools": "./langgraph-entry.mjs:graph"
   },
   "env": ".env"
 }

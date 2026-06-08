@@ -1,5 +1,5 @@
-import { buildGraphPipeline } from './graph.ts';
-import { OpenRouterService } from '../services/openRouterService.ts';
+import { buildGraphPipeline } from "./graph";
+import { OpenRouterService } from "../services/openRouterService";
 
 export async function buildGraph() {
   const llm = new OpenRouterService();
