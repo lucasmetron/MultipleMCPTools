@@ -24,7 +24,7 @@ export const config: ModelConfig = {
   apiKey: process.env.OPENROUTER_API_KEY!,
   httpReferer: "",
   xTitle: "IA Devs - Transforming Services into Tools",
-  models: ["nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free"],
+  models: ["openrouter/free"],
   provider: {
     sort: {
       by: "throughput", // Route to model with highest throughput (fastest response)
